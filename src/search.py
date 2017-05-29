@@ -34,25 +34,29 @@ def breadthfirst(graph,start, end):
 def depthfirst(graph, start, end):
     """
     Depth First Search algorithm,
-    returns path takend so far...
+    returns path taken and shortest path
     -----------------------------
     Inputs:
         graph : Dictionary of connecting nodes
         start : Integer starting point on the graph
         end   : Integer ending point on the graph
     Outputs:
-        tpath  : Path taken
+        tpath : Path taken
+        path  : Shortest path
     """
-    queue = []
-    queue.append(start)
+    path_queue = []
+    path_queue.append([start])
     tpath = []
-    while queue:
-        node = queue.pop(0)
+    while path_queue:
+        path = path_queue.pop(0)
+        #print path
+        node = path[-1]
         tpath.append(node)
-        newnodes = graph.get(node, [])
         if node == end:
-            return tpath
-        queue = newnodes + queue
+            return tpath, path
+        for adjacent in graph.get(node, [])[::-1]:
+            new_path = path + [adjacent]
+            path_queue = [new_path] + path_queue
 
 def depthfirstright(graph, start, end):
     """
