@@ -2,8 +2,6 @@
 Common search algorithms.
 """
 
-
-
 def breadthfirst(graph,start, end):
     """
     Breadth First Search Algorithm.
