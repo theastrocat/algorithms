@@ -8,7 +8,7 @@ def breadthfirst(graph,start, end):
     """
     Breadth First Search Algorithm.
     Returns shortest path and path taken as tuple.
-
+    -------------------------------------
     Inputs:
         graph : Dictionary of connecting nodes
         start : Integer starting point on the graph
@@ -34,7 +34,7 @@ def breadthfirst(graph,start, end):
 def depthfirst(graph, start, end):
     """
     Depth First Search algorithm,
-    returns path taken and shortest path
+    Returns path taken and shortest path
     -----------------------------
     Inputs:
         graph : Dictionary of connecting nodes

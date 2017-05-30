@@ -5,16 +5,14 @@ Common sorting algorithms.
 def quicksort(u_list):
     """
     Implements a quicksort algorithm.
-
+    ---------------------------------
     Inputs:
-    -------------
-    u_list : Unsorted List
-
+        u_list : Unsorted List
     Outputs:
-    u_list : Sorted List
+        u_list : Sorted List
     """
 
-    less = [] 
+    less = []
     equal = []
     greater = []
     if len(u_list) > 1:
