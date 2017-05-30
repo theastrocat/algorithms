@@ -1,7 +1,11 @@
 # algorithms
 Repo for creating common algorithms from scratch.
 
-List of algorithms:
+## Algorithms:
+
+### Search:
 * Breadth-first search
 * Depth-first search
-* 
+
+### Sort:
+* Quicksort 
